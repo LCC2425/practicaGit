@@ -33,7 +33,8 @@
             label2 = new Label();
             label1 = new Label();
             button2 = new Button();
-            chkUrgente = new CheckBox();
+            radioOrinario = new RadioButton();
+            radioUrgente = new RadioButton();
             SuspendLayout();
             // 
             // txtTelegrama
@@ -82,28 +83,40 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // chkUrgente
+            // radioOrinario
             // 
-            chkUrgente.AutoSize = true;
-            chkUrgente.Location = new Point(188, 296);
-            chkUrgente.Margin = new Padding(3, 4, 3, 4);
-            chkUrgente.Name = "chkUrgente";
-            chkUrgente.Size = new Size(91, 24);
-            chkUrgente.TabIndex = 5;
-            chkUrgente.Text = "Urgente?";
-            chkUrgente.UseVisualStyleBackColor = true;
+            radioOrinario.AutoSize = true;
+            radioOrinario.Location = new Point(188, 296);
+            radioOrinario.Name = "radioOrinario";
+            radioOrinario.Size = new Size(93, 24);
+            radioOrinario.TabIndex = 11;
+            radioOrinario.TabStop = true;
+            radioOrinario.Text = "Ordinario";
+            radioOrinario.UseVisualStyleBackColor = true;
+            // 
+            // radioUrgente
+            // 
+            radioUrgente.AutoSize = true;
+            radioUrgente.Location = new Point(311, 296);
+            radioUrgente.Name = "radioUrgente";
+            radioUrgente.Size = new Size(83, 24);
+            radioUrgente.TabIndex = 11;
+            radioUrgente.TabStop = true;
+            radioUrgente.Text = "Urgente";
+            radioUrgente.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(radioUrgente);
+            Controls.Add(radioOrinario);
             Controls.Add(txtTelegrama);
             Controls.Add(txtPrecio);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button2);
-            Controls.Add(chkUrgente);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -117,6 +130,7 @@
         private Label label2;
         private Label label1;
         private Button button2;
-        private CheckBox chkUrgente;
+        private RadioButton radioOrinario;
+        private RadioButton radioUrgente;
     }
 }
